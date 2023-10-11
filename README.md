@@ -7,5 +7,5 @@
 ```batch
 mkdir C:\Users\user\AppData\Local\nvim\
 cd C:\Users\user\AppData\Local\nvim\
-git clone
+git clone 
 ```
