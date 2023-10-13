@@ -20,4 +20,6 @@ exit
 mkdir C:\Users\user\AppData\Local\nvim\
 cd C:\Users\user\AppData\Local\nvim\
 git clone git@github.com:HellHBBD/nvim-Windows.git
+
+
 ```
