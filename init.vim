@@ -1,7 +1,7 @@
 syntax on
-filetype on
-filetype indent on
-filetype plugin on
+
+"filetype plugin, indent, on
+filetype plugin indent on
 
 source ~/AppData/Local/nvim/keymap.vim
 source ~/AppData/Local/nvim/functionmap.vim
