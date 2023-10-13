@@ -3,7 +3,6 @@ filetype on
 filetype indent on
 filetype plugin on
 
-"let s:path = ~\AppData\Local\nvim
 source ~\AppData\Local\nvim\keymap.vim
 source ~\AppData\Local\nvim\functionmap.vim
 source ~\AppData\Local\nvim\color.vim
