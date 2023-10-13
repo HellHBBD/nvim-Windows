@@ -1,6 +1,6 @@
 "file refresh
-inoremap <F5> <esc>:source ~\AppData\Local\nvim\init.vim<cr>
-nnoremap <F5> :source ~\AppData\Local\nvim\init.vim<cr>
+inoremap <F5> <esc>:source ~/AppData/Local/nvim/init.vim<cr>
+nnoremap <F5> :source ~/AppData/Local/nvim/init.vim<cr>
 inoremap <c-6> <esc>:w<cr><c-6>
 nnoremap <c-6> :w<cr><c-6>
 
