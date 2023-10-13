@@ -21,5 +21,4 @@ mkdir C:\Users\user\AppData\Local\nvim\
 cd C:\Users\user\AppData\Local\nvim\
 git clone https://github.com/HellHBBD/nvim-Windows.git .
 
-
 ```
