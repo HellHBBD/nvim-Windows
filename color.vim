@@ -21,7 +21,7 @@ set cursorcolumn
 
 " Color configuration
 "set bg=dark
-"
+
 "Same as :colorscheme evening
 "color evening
 
