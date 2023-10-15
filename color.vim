@@ -23,7 +23,7 @@ set cursorcolumn
 "set bg=dark
 "
 "Same as :colorscheme evening
-color evening
+"color evening
 
 hi CursorLineNr ctermfg=Green ctermbg=black cterm=bold
 hi CursorColumn ctermfg=Green ctermbg=black cterm=None
