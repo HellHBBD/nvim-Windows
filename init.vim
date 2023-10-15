@@ -10,25 +10,25 @@ elseif has('unix')
 	set fileformat=unix
 endif
 
+"if has('win32')
+"elseif has('unix')
+"endif
+
 if has('win32')
+	let g:nvim_config_home = '~/AppData/Local/nvim/'
 elseif has('unix')
+	let g:nvim_config_home = '~/.config/nvim/'
 endif
-if has('win32')
-	source ~/AppData/Local/nvim/keymap.vim
-	source ~/AppData/Local/nvim/functionmap.vim
-	source ~/AppData/Local/nvim/color.vim
-	source ~/AppData/Local/nvim/layout.vim
-	source ~/AppData/Local/nvim/vim-plug.vim
-	source ~/AppData/Local/nvim/vim-airline.vim
-	source ~/AppData/Local/nvim/nerdtree.vim
-	"source ~/AppData/Local/nvim/test.vim
-elseif has('unix')
-	source ~/.config/nvim/keymap.vim
-	source ~/.config/nvim/functionmap.vim
-	source ~/.config/nvim/color.vim
-	source ~/.config/nvim/layout.vim
-	source ~/.config/nvim/vim-plug.vim
-	source ~/.config/nvim/vim-airline.vim
-	source ~/.config/nvim/nerdtree.vim
-	"source ~/.config/nvim/test.vim
-endif
+
+function! Source(plug)
+	exe 'source ' . g:nvim_config_home . a:plug
+endfunction
+
+call Source('keymap.vim')
+call Source('functionmap.vim')
+call Source('color.vim')
+call Source('layout.vim')
+call Source('vim-plug.vim')
+call Source('vim-airline.vim')
+call Source('nerdtree.vim')
+"call Source('test.vim')
