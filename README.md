@@ -1,32 +1,32 @@
-## Neovim
+# Neovim
 
 [Neovim Download Page](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-download)
 
-## vim-plug
+# vim-plug
 
-### Install
+## Install
 
 [vim-plug Installation Page](https://github.com/junegunn/vim-plug#neovim)
 
-### Uninstall
+## Uninstall
 
-#### Windows
+### Windows
 
 ```
 rd /s /q %LOCALAPPDATA%\nvim-data
 ```
 
-#### Linux
+### Linux
 
 ```
 rm -rf ~/.local/share/nvim
 ```
 
-## Config files
+# Config files
 
-### Install
+## Install
 
-#### Windows
+### Windows
 
 ```
 md %LOCALAPPDATA%\nvim
@@ -34,7 +34,7 @@ cd %LOCALAPPDATA%\nvim
 git clone https://github.com/HellHBBD/nvim-config.git .
 ```
 
-#### Linux
+### Linux
 
 ```
 mkdir ~/.config
@@ -43,15 +43,15 @@ cd ~/.config/nvim
 git clone https://github.com/HellHBBD/nvim-config.git .
 ```
 
-### Uninstall
+## Uninstall
 
-#### Windows
+### Windows
 
 ```
 rd %LOCALAPPDATA%\nvim
 ```
 
-#### Linux
+### Linux
 
 ```
 rm -rf ~/.config
