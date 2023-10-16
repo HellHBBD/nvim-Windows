@@ -2,13 +2,18 @@
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
 Plug 'preservim/nerdtree'
-Plug 'tomasiser/vim-code-dark'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'gabrielelana/vim-markdown'
-Plug 'tyru/open-browser.vim'
+
+Plug 'tomasiser/vim-code-dark'
+
 Plug 'godlygeek/tabular'
+Plug 'gabrielelana/vim-markdown'
+
+Plug 'tyru/open-browser.vim'
 Plug 'previm/previm'
+
 Plug 'tomtom/tcomment_vim'
 "Plug ''
 call plug#end()
