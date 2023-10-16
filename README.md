@@ -54,5 +54,5 @@ rd %LOCALAPPDATA%\nvim
 ### Linux
 
 ```
-rm -rf ~/.config
+rm -rf ~/.config/nvim
 ```
