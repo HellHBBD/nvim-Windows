@@ -15,5 +15,8 @@ Plug 'tyru/open-browser.vim'
 Plug 'previm/previm'
 
 Plug 'tomtom/tcomment_vim'
+
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
 "Plug ''
 call plug#end()
