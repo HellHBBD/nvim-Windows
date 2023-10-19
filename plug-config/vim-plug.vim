@@ -18,5 +18,7 @@ Plug 'tomtom/tcomment_vim'
 
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+
+Plug 'nvim-treesitter/nvim-treesitter'
 "Plug ''
 call plug#end()
