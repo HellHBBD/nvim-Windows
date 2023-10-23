@@ -37,8 +37,7 @@ git clone https://github.com/HellHBBD/nvim-config.git .
 ### Linux
 
 ```
-mkdir ~/.config
-mkdir ~/.config/nvim
+mkdir -p ~/.config/nvim
 cd ~/.config/nvim
 git clone https://github.com/HellHBBD/nvim-config.git .
 ```
