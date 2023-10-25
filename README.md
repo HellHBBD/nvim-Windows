@@ -1,29 +1,3 @@
-# Neovim
-
-[Neovim Download Page](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-download)
-
-# vim-plug
-
-## Install
-
-[vim-plug Installation Page](https://github.com/junegunn/vim-plug#neovim)
-
-## Uninstall
-
-### Windows
-
-```
-rd /s /q %LOCALAPPDATA%\nvim-data
-```
-
-### Linux
-
-```
-rm -rf ~/.local/share/nvim
-```
-
-# Config files
-
 ## Install
 
 ### Windows
