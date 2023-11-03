@@ -10,20 +10,20 @@ inoremap <c-6> <esc>:w<cr><c-6>
 nnoremap <c-6> :w<cr><c-6>
 
 "compile
-au filetype c nnoremap <F6> :w<cr>:!gcc -std=c99 "%"<cr>
-au filetype c inoremap <F6> <esc>:w<cr>:!gcc -std=c99 "%"<cr>
+au filetype c nnoremap <F6> :w<cr>:!gcc -std=c99 -lm "%"<cr>
+au filetype c inoremap <F6> <esc>:w<cr>:!gcc -std=c99 -lm "%"<cr>
 au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
 au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
 
 "compile & run
 if has('win32')
-	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" & a<cr>
-	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" & a<cr>
+	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 -lm "%" & a<cr>
+	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 -lm "%" & a<cr>
 	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & a<cr>
 	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & a<cr>
 elseif has('unix')
-	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" & ./a.out<cr>
-	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" & ./a.out<cr>
+	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 -lm "%" & ./a.out<cr>
+	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 -lm "%" & ./a.out<cr>
 	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & ./a.out<cr>
 	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & ./a.out<cr>
 endif
@@ -33,6 +33,6 @@ au filetype java nnoremap <F7> :w<cr>:!java "%"<cr>
 au filetype java inoremap <F7> <esc>:w<cr>:!java "%"<cr>
 
 "debugger
-au filetype c nnoremap <F8> :w<cr>:!gcc -std=c99 -g "%"<cr>
+au filetype c nnoremap <F8> :w<cr>:!gcc -std=c99 -g -lm "%"<cr>
 au filetype cpp nnoremap <F8> :w<cr>:!g++ -g "%"<cr>
 au filetype python nnoremap <F8> :w<cr>:!copy "%" debug.py<cr>
