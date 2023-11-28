@@ -16,10 +16,10 @@ if has('win32')
 	au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
 	au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
 elseif has('unix')
-	au filetype c nnoremap <F6> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 "%" -lm<cr>
-	au filetype c inoremap <F6> <esc>:w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 "%" -lm<cr>
-	au filetype cpp nnoremap <F6> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ "%"<cr>
-	au filetype cpp nnoremap <F6> <esc>:w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ "%"<cr>
+	au filetype c nnoremap <F6> :w<cr>:!gcc -std=c99 "%" -lm<cr>
+	au filetype c inoremap <F6> <esc>:w<cr>:!gcc -std=c99 "%" -lm<cr>
+	au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
+	au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
 endif
 
 "compile & run
@@ -29,10 +29,10 @@ if has('win32')
 	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & a<cr>
 	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & a<cr>
 elseif has('unix')
-	au filetype c nnoremap <F7> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
-	au filetype c inoremap <F7> <esc>:w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
-	au filetype cpp nnoremap <F7> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ "%" & ./a.out<cr>
-	au filetype cpp nnoremap <F7> <esc>:w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ "%" & ./a.out<cr>
+	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
+	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
+	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & ./a.out<cr>
+	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & ./a.out<cr>
 endif
 au filetype python nnoremap <F7> :w<cr>:!python "%"<cr>
 au filetype python inoremap <F7> <esc>:w<cr>:!python "%"<cr>
@@ -41,11 +41,11 @@ au filetype java inoremap <F7> <esc>:w<cr>:!java "%"<cr>
 
 "debugger
 if has('win32')
-	au filetype c nnoremap <F8> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 -g "%" -lm<cr>
-	au filetype cpp nnoremap <F8> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ -g "%"<cr>
+	au filetype c nnoremap <F8> :w<cr>:!gcc -std=c99 -g "%" -lm<cr>
+	au filetype cpp nnoremap <F8> :w<cr>:!g++ -g "%"<cr>
 elseif has('unix')
-	au filetype c nnoremap <F8> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!gcc -std=c99 -g "%" -lm<cr>
-	au filetype cpp nnoremap <F8> :w<cr>:!clang-format -i "%"<cr>:e!<cr>:!g++ -g "%"<cr>
+	au filetype c nnoremap <F8> :w<cr>:!gcc -std=c99 -g "%" -lm<cr>
+	au filetype cpp nnoremap <F8> :w<cr>:!g++ -g "%"<cr>
 endif
 au filetype python nnoremap <F8> :w<cr>:!copy "%" debug.py<cr>
 
