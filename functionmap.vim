@@ -34,8 +34,13 @@ elseif has('unix')
 	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & ./a.out<cr>
 	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & ./a.out<cr>
 endif
-au filetype python nnoremap <F7> :w<cr>:!python "%"<cr>
-au filetype python inoremap <F7> <esc>:w<cr>:!python "%"<cr>
+if has('win32')
+	au filetype python nnoremap <F7> :w<cr>:!python "%"<cr>
+	au filetype python inoremap <F7> <esc>:w<cr>:!python "%"<cr>
+elseif has('unix')
+	au filetype python nnoremap <F7> :w<cr>:!python3 "%"<cr>
+	au filetype python inoremap <F7> <esc>:w<cr>:!python3 "%"<cr>
+endif
 au filetype java nnoremap <F7> :w<cr>:!java "%"<cr>
 au filetype java inoremap <F7> <esc>:w<cr>:!java "%"<cr>
 
