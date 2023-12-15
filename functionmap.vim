@@ -29,10 +29,10 @@ if has('win32')
 	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & a<cr>
 	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & a<cr>
 elseif has('unix')
-	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
-	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" -lm & ./a.out<cr>
-	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" & ./a.out<cr>
-	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" & ./a.out<cr>
+	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" -lm ; ./a.out<cr>
+	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" -lm ; ./a.out<cr>
+	au filetype cpp nnoremap <F7> :w<cr>:!g++ "%" ; ./a.out<cr>
+	au filetype cpp nnoremap <F7> <esc>:w<cr>:!g++ "%" ; ./a.out<cr>
 endif
 if has('win32')
 	au filetype python nnoremap <F7> :w<cr>:!python "%"<cr>
