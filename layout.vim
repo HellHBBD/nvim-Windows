@@ -1,5 +1,6 @@
 "don't auto break line
-set nowrap
+set wrap
+" set nowrap
 
 "smooth horizontal scroll
 set sidescroll=1
