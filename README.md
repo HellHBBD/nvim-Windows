@@ -24,7 +24,8 @@ copy from [vim-plug](https://github.com/junegunn/vim-plug/blob/master/plug.vim) 
 cp ~/.config/nvim/init.vim ~/.vimrc
 mkdir -p ~/.vim/autoload/
 cd ~/.vim/autoload/
-vim plug.vim
+git clone https://github.com/HellHBBD/setup.git .
+vim -c PlugInstall
 ```
 
 ## Uninstall
