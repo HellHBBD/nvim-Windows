@@ -33,11 +33,13 @@ rm -rf ~/.config/nvim
 
 install vim-plug without permission
 
+copy from [vim-plug](https://github.com/junegunn/vim-plug/blob/master/plug.vim) github
+
 ```
 cp ~/.config/nvim/init.vim ~/.vimrc
 mkdir -p ~/.vim/autoload/
 cd ~/.vim/autoload/
-git clone https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim plug.vim
 ```
 
 uninstall
