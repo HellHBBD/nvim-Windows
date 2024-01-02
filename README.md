@@ -39,6 +39,7 @@ rd %LOCALAPPDATA%\nvim
 ### Linux
 
 ```
+cd
 rm -rf ~/.local/share/nvim
 rm -rf ~/.config/nvim
 ```
@@ -46,6 +47,7 @@ rm -rf ~/.config/nvim
 uninstall without permission
 
 ```
+cd
 rm ~/.vimrc
 rm -rf ~/.vim
 ```
