@@ -55,6 +55,4 @@ endif
 au filetype python nnoremap <F8> :w<cr>:!copy "%" debug.py<cr>
 
 "clang-format
-if has('unix')
-	nnoremap <F9> :w<cr>:!clang-format -i "%"<cr>:e!<cr>
-endif
+nnoremap <F9> :w<cr>:!clang-format -i "%"<cr>:e!<cr>
