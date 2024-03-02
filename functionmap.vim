@@ -21,8 +21,10 @@ elseif has('unix')
 	au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
 	au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
 endif
+au filetype java nnoremap <F6> :w<cr>:!javac "%"<cr>
+au filetype java inoremap <F6> <esc>:w<cr>:!javac "%"<cr>
 
-"compile & run
+"run
 if has('win32')
 	au filetype c nnoremap <F7> :w<cr>:!gcc -std=c99 "%" -lm & a<cr>
 	au filetype c inoremap <F7> <esc>:w<cr>:!gcc -std=c99 "%" -lm & a<cr>
@@ -52,7 +54,6 @@ elseif has('unix')
 	au filetype c nnoremap <F8> :w<cr>:!gcc -std=c99 -g "%" -lm<cr>
 	au filetype cpp nnoremap <F8> :w<cr>:!g++ -g "%"<cr>
 endif
-au filetype python nnoremap <F8> :w<cr>:!copy "%" debug.py<cr>
 
 "clang-format
 nnoremap <F9> :w<cr>:!clang-format -i "%"<cr>:e!<cr>
