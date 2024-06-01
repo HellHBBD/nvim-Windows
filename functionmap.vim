@@ -15,11 +15,15 @@ if has('win32')
 	au filetype c inoremap <F6> <esc>:w<cr>:!gcc -std=c99 "%" -lm<cr>
 	au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
 	au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
+	au filetype java nnoremap <F6> :w<cr>:!javac "%"<cr>
+	au filetype java inoremap <F6> <esc>:w<cr>:!javac "%"<cr>
 elseif has('unix')
 	au filetype c nnoremap <F6> :w<cr>:!gcc -std=c99 "%" -lm<cr>
 	au filetype c inoremap <F6> <esc>:w<cr>:!gcc -std=c99 "%" -lm<cr>
 	au filetype cpp nnoremap <F6> :w<cr>:!g++ "%"<cr>
 	au filetype cpp nnoremap <F6> <esc>:w<cr>:!g++ "%"<cr>
+	au filetype java nnoremap <F6> :w<cr>:!javac "%"<cr>
+	au filetype java inoremap <F6> <esc>:w<cr>:!javac "%"<cr>
 endif
 au filetype java nnoremap <F6> :w<cr>:!javac "%"<cr>
 au filetype java inoremap <F6> <esc>:w<cr>:!javac "%"<cr>

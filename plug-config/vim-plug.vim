@@ -19,6 +19,8 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
+" Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug ''
 call plug#end()
