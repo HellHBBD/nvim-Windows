@@ -18,5 +18,7 @@ Plug 'tomtom/tcomment_vim'
 
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug ''
 call plug#end()
